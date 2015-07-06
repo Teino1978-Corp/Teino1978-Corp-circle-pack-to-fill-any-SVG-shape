@@ -104,7 +104,7 @@ $(document).ready(function () {
     var $canvas = $('<canvas>').attr(_canvasProps).appendTo('body');
     var $canvas2 = $('<canvas>').attr(_canvasProps).appendTo('body');
     var ctx = $canvas[0].getContext('2d');
-    _drawSvg(ctx, 'data/note.svg', function() {
+    _drawSvg(ctx, 'note.svg', function() {
         var imgData = ctx.getImageData(0, 0, _canvasProps.width, _canvasProps.height);
         _placeCircles(imgData);
         _drawCircles($canvas2[0].getContext('2d'));
